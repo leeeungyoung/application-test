@@ -1,3 +1,4 @@
 # application Test 
-## javascript programming result
-- used Language : Javascript, Html, CSS
+## javascript programming
+
+Project name : Row-Column Calculator

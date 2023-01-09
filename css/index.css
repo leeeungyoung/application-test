@@ -1,0 +1,322 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Wageul';
+  src: url("../ttf/210 와글와글B.ttf");
+}
+
+@font-face {
+  font-family: 'Richmango';
+  src: url("../ttf/210 리치망고B.ttf");
+}
+
+@font-face {
+  font-family: 'newgul';
+  src: url("../ttf/a뉴굴림2.ttf");
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input {
+  background-color: #EEEEEE;
+  border: 2.5px solid #7A91BF;
+  color: #7A91BF;
+  font-family: "Richmango";
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  background-color: #EEEEEE;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+.title_Wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.title_Wrap h1 {
+  margin-top: 1.5vw;
+  color: #ec573b;
+  font-family: "Wageul";
+  text-shadow: 0.13vw 0.13vw #333333;
+}
+
+.title_Wrap h1 span {
+  color: #7A91BF;
+}
+
+.array_area_Wrap {
+  height: 40vw;
+  text-align: center;
+  margin-top: 0.5vw;
+  font-family: "Richmango";
+  color: #7A91BF;
+  text-shadow: 0.13vw 0.13vw #333333;
+}
+
+.array_area_Wrap .array_Area {
+  width: 45%;
+  float: left;
+}
+
+.array_area_Wrap .array_Area h2 {
+  width: 10%;
+  height: 4vw;
+  line-height: 4.3vw;
+  margin: 0 45%;
+  background-color: #7A91BF;
+  color: #EEEEEE;
+  text-shadow: none;
+  -webkit-box-shadow: 0.13vw 0.13vw #333333;
+          box-shadow: 0.13vw 0.13vw #333333;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.array_area_Wrap .array_Area .matrix_Wrap {
+  height: 6.5vw;
+}
+
+.array_area_Wrap .array_Area .matrix_Wrap .row_Wrap, .array_area_Wrap .array_Area .matrix_Wrap .columm_Wrap {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.array_area_Wrap .array_Area .matrix_Wrap .row_Wrap span, .array_area_Wrap .array_Area .matrix_Wrap .columm_Wrap span {
+  font-size: 2.5vw;
+}
+
+.array_area_Wrap .array_Area .matrix_Wrap .row_Wrap p, .array_area_Wrap .array_Area .matrix_Wrap .columm_Wrap p {
+  margin-top: 10px;
+  font-family: "Richmango";
+  text-shadow: none;
+  font-size: 1.4vw;
+  color: #ec573b;
+  letter-spacing: -0.02vw;
+  word-spacing: 0.2vw;
+}
+
+.array_area_Wrap .array_Area .matrix_Wrap .row_Wrap input, .array_area_Wrap .array_Area .matrix_Wrap .columm_Wrap input {
+  width: 8vw;
+  height: 2.5vw;
+  font-size: 2vw;
+  margin-top: 1vw;
+  border: 2.5px solid #7A91BF;
+  border-radius: 1vw;
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
+}
+
+.array_area_Wrap .array_Area .matrix_Wrap .row_Wrap input:focus, .array_area_Wrap .array_Area .matrix_Wrap .columm_Wrap input:focus {
+  border: 2.5px solid #ec573b;
+  -webkit-box-shadow: 3px 3px 1px #333333;
+          box-shadow: 3px 3px 1px #333333;
+}
+
+.array_area_Wrap .array_Area .matrix_Num_box {
+  width: 100%;
+  height: 100%;
+}
+
+.array_area_Wrap .array_Area .matrix_Num_box .matrix_input_box input {
+  width: 2.2vw;
+  height: 2.2vw;
+  border: 0.13vw dashed #7A91BF;
+  margin: 0.35vw;
+  font-size: 1.1vw;
+  color: #7A91BF;
+}
+
+.array_area_Wrap .buttonS_Wrap {
+  width: 10%;
+  height: 100%;
+  float: left;
+}
+
+.array_area_Wrap .buttonS_Wrap .output_Button_Wrap {
+  width: 100%;
+  margin-top: 4vw;
+}
+
+.array_area_Wrap .buttonS_Wrap .output_Button_Wrap input {
+  font-family: "Richmango";
+  width: 100%;
+  height: 6.5vw;
+  font-size: 3vw;
+  line-height: 2.9vw;
+  color: #7A91BF;
+  border: 0.5vw solid #7A91BF;
+  background-color: #EEEEEE;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+
+.array_area_Wrap .buttonS_Wrap .output_Button_Wrap input:hover {
+  cursor: pointer;
+  background-color: #EEEEEE;
+  color: #ec573b;
+  border: 0.5vw solid #ec573b;
+  text-shadow: none;
+  -webkit-box-shadow: 4px 4px #333333;
+          box-shadow: 4px 4px #333333;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.array_area_Wrap .buttonS_Wrap .function_Button_wrap {
+  width: 100%;
+  margin-top: 8vw;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+
+.array_area_Wrap .buttonS_Wrap .function_Button_wrap .clearBtn {
+  margin-top: 2vw;
+}
+
+.array_area_Wrap .buttonS_Wrap .function_Button_wrap .function_Buttons input {
+  font-family: "Richmango";
+  width: 100%;
+  height: 6.5vw;
+  font-size: 3vw;
+  line-height: 2.9vw;
+  color: #7A91BF;
+  border: 0.5vw solid #7A91BF;
+  background-color: #EEEEEE;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+
+.array_area_Wrap .buttonS_Wrap .function_Button_wrap .function_Buttons input:hover {
+  cursor: pointer;
+  background-color: #EEEEEE;
+  color: #ec573b;
+  border: 0.5vw solid #ec573b;
+  text-shadow: none;
+  -webkit-box-shadow: 4px 4px #333333;
+          box-shadow: 4px 4px #333333;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.array_area_Wrap .buttonS_Wrap .button_Calculation_Wrap {
+  width: 100%;
+  margin-top: 4vw;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+
+.array_area_Wrap .buttonS_Wrap .button_Calculation_Wrap .button_Calculation input {
+  font-family: "Richmango";
+  width: 100%;
+  height: 6.5vw;
+  font-size: 3vw;
+  line-height: 2.9vw;
+  color: #7A91BF;
+  border: 0.5vw solid #7A91BF;
+  background-color: #EEEEEE;
+  width: 30%;
+  height: 100%;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+
+.array_area_Wrap .buttonS_Wrap .button_Calculation_Wrap .button_Calculation input:hover {
+  cursor: pointer;
+  background-color: #EEEEEE;
+  color: #ec573b;
+  border: 0.5vw solid #ec573b;
+  text-shadow: none;
+  -webkit-box-shadow: 4px 4px #333333;
+          box-shadow: 4px 4px #333333;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.array_area_Wrap.result {
+  display: none;
+}
+
+.array_area_Wrap.result .array_Area.area_result {
+  width: 100%;
+  padding: 5vw 0;
+}
+
+.array_area_Wrap.result .array_Area.area_result h2 {
+  margin-bottom: 1.0vw;
+}
+
+.array_area_Wrap.result .array_Area.area_result .matrix_Num_box .matrix_input_box.result input {
+  border: 0.1vw solid #7A91BF;
+  width: 3.2vw;
+  height: 3.2vw;
+  font-size: 1.5vw;
+}
+/*# sourceMappingURL=index.css.map */

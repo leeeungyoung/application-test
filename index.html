@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+		<link rel="shortcut icon" type="image⁄x-icon" href="./img/m_icon4.png">
+        <title> 행렬 계산기</title>
+        <link rel="stylesheet" href="./css/popup.css"> 
+        <link rel="stylesheet" href="./css/index.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <section class="popup_wrap">
+            <section class="popup_box">
+                <div class="popup_con">
+                    <span class="popup_string"> 팝업내용 </span>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- 행렬 계산기 타이틀  -->
+        <section class="title_Wrap">
+            <h1>행렬 <span>계산기</span></h1>
+        </section>
+
+        <!-- A B 행렬, 출력 랩 -->
+        <section class="array_area_Wrap">
+
+            <!-- A 랩 -->
+            <section class="array_Area area_A">
+                <h2> A </h2>
+
+                <!-- 행렬랩 -->
+                <section class="matrix_Wrap">
+
+                    <!-- 행 -->
+                    <div class="row_Wrap">
+                        <span>행</span><br>
+                        <input type="number"  id="aRowNum" class="keyupinput" tabindex=100 value="" min="1" max="10">
+                        <p></p>
+                    </div>
+
+                    <!-- 렬 -->
+                    <div class="columm_Wrap">
+                        <span>열</span><br>
+                        <input type="number"  id="aColumnNum" class="keyupinput" tabindex=200 valu="" min="1" max="10">
+                        <p></p>
+                    </div>
+
+                </section>
+
+                <!-- 행 렬 입력 값 랩 -->
+                <section class="matrix_Num_box">
+
+                    <!-- 행 렬 박스 나오는곳 -->
+                    <div class="matrix_input_box" id="a_matrix_input_box">
+                    </div>
+
+                </section>
+
+            </section>
+
+            <section class="buttonS_Wrap">
+
+                <!-- 출력 버튼 -->
+                <div class="output_Button_Wrap">
+
+                    <!-- 행 렬 입력 후 박스 출력하는 버튼 -->
+                    <input type="button" value="출력" id="outputBtn">
+                </div>
+
+                <div class="function_Button_wrap">
+                    <div class="function_Buttons">
+                        <input type="button" value="랜덤" id="randomBtn">
+                        <input type="button" value="초기화" id="clearBtn" class="clearBtn">
+                    </div>
+                </div>
+
+                <div class="button_Calculation_Wrap">
+                    <div class="button_Calculation">
+                        <input type="button" value="+" id="plusBtn">
+                        <input type="button" value="-"  id ="minusBtn">
+                        <input type="button" value="X" id = "multiplyBtn"> 
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- B 랩 -->
+            <section class="array_Area area_B">
+                <h2> B </h2>
+
+                <!-- 행렬 입력 -->
+                <section class="matrix_Wrap">
+
+                    <!-- 행 -->
+                    <div class="row_Wrap">
+                        <span>행</span><br>
+                        <input type="number"  id="bRowNum" class="keyupinput" tabindex=300 value="" min="1" max="10">
+                        <p></p>
+                    </div>
+                    
+                    <!-- 렬 -->
+                    <div class="columm_Wrap">
+                        <span>열</span><br>
+                        <input type="number"  id="bColumnNum" class="keyupinput" tabindex=400 value="" min="1" max="10">
+                        <p></p>
+                    </div>
+
+                </section>
+
+                <!-- 행 렬 입력 값 랩 -->
+                <section class="matrix_Num_box">
+
+                    <!-- 행 렬 박스 나오는곳 -->
+                    <div class="matrix_input_box" id="b_matrix_input_box">
+                    </div>
+
+                </section>
+            </section>
+
+        </section>
+        
+        <section class="array_area_Wrap result">
+            
+            <!-- 결과 랩 -->
+            <section class="array_Area area_result">
+                <h2 class="result_title"> 결 과 </h2>
+                
+                <!-- 행 렬 입력 값 랩 -->
+                <section class="matrix_Num_box">
+                    
+                    <!-- 행 렬 박스 나오는곳 -->
+                    <div class="matrix_input_box result" id="result_matrix_input_box">
+                    </div>
+                    
+                </section>
+            </section>
+        </section>
+            
+    </body>
+    <script src="./js/index.js"></script>
+
+    <script>
+        $('.popup_box').on("click",function(){
+            $('.popup_wrap').css('display','none');
+        });
+    </script>
+</html>

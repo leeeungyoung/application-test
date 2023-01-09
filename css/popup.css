@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Wageul';
+  src: url("../ttf/210 와글와글B.ttf");
+}
+
+@font-face {
+  font-family: 'Richmango';
+  src: url("../ttf/210 리치망고B.ttf");
+}
+
+@font-face {
+  font-family: 'newgul';
+  src: url("../ttf/a뉴굴림2.ttf");
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input {
+  background-color: #EEEEEE;
+  border: 2.5px solid #7A91BF;
+  color: #7A91BF;
+  font-family: "Richmango";
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.popup_wrap {
+  display: none;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+}
+
+.popup_wrap .popup_box {
+  cursor: pointer;
+  width: 40vw;
+  height: 10vw;
+  color: #ec573b;
+  line-height: 10vw;
+  text-align: center;
+  font-family: "newgul";
+  font-size: 1.7vw;
+  letter-spacing: -0.05vw;
+  word-spacing: 0.3vw;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  margin-left: -20vw;
+  background-color: #EEEEEE;
+  border-radius: 1vw;
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
+}
+/*# sourceMappingURL=popup.css.map */
